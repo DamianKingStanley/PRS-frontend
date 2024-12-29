@@ -1,0 +1,149 @@
+/* LogIn.css */
+.loginsection {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.LoginBody {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.LoginBody h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#username,
+#Password {
+  width: 350px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.LoginBody input:focus {
+  border-color: #2575fc;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+}
+#role {
+  display: none;
+}
+.LoginBody .pswd-container {
+  position: relative;
+}
+
+.LoginBody .pswd-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}
+
+.LoginBody .pswd-toggle-icon:hover {
+  color: #2575fc;
+}
+
+.LoginBody button {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.LoginBody button:hover {
+  background-color: #0056d2;
+}
+
+.LoginBody button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.LoginBody .toRegister p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.LoginBody .toRegister a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.LoginBody .toRegister a:hover {
+  text-decoration: underline;
+}
+
+.LoginBody .button-loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #2575fc;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 980px) {
+  .LoginBody {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+  }
+  .LoginBody input[type="text"],
+  .LoginBody input[type="password"],
+  .LoginBody select {
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+}

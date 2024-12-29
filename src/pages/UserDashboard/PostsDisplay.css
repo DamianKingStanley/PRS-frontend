@@ -1,0 +1,41 @@
+/* PostsDisplay.css */
+.posts-display {
+  padding: 20px;
+}
+.yourlikedposts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.loading {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .yourlikedposts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

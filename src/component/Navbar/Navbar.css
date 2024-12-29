@@ -1,0 +1,241 @@
+/* Navbar Styling */
+.Navbar {
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Container for Flexbox Layout */
+.NavbarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+/* Logo Styling */
+.Logo a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Search Bar Styling */
+.SearchBar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.SearchBar input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.SearchBar button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.SearchBar button:hover {
+  background-color: #0056b3;
+}
+
+/* Nav Actions (Account, Cart, Saved Items, etc.) */
+.NavActions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.NavItem {
+  font-size: 16px;
+  position: relative;
+  list-style-type: none;
+}
+
+.NavItem a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Dropdown Menu */
+.DropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none; /* Remove list dots */
+  padding: 10px;
+  z-index: 999;
+}
+
+.DropdownMenu li {
+  list-style: none; /* Ensure list dots are removed */
+  padding: 10px;
+}
+
+.DropdownMenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.DropdownMenu li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* Dropdown background color on hover */
+.DropdownMenu li a:active {
+  background-color: #007bff;
+  color: white;
+}
+.Account {
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Account Dropdown Hover Effect */
+.Account:hover .DropdownMenu {
+  display: block;
+  z-index: 999;
+}
+
+/* Mobile Menu Icon */
+.MobileMenuIcon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.DropdownMenu.open {
+  display: block;
+}
+
+.DropdownMenu li {
+  list-style: none;
+  padding: 10px;
+}
+
+.DropdownMenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.DropdownMenu li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* Account Dropdown Hover Effect */
+.Account:hover .DropdownMenu {
+  display: block;
+}
+.logoutbutton {
+  background-color: inherit;
+  border: none;
+  font-weight: bolder;
+}
+.logoutbutton:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+.LoggingOutMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .SearchBar {
+    display: none;
+  }
+
+  .NavActions {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    align-items: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .NavActions.active {
+    display: flex;
+    text-align: left;
+  }
+
+  .NavActions.active li {
+    width: fit-content;
+  }
+
+  .NavActions.active li a {
+    width: 100%;
+    padding: 10px 0;
+    text-align: left; /* Align text to the left */
+    padding-left: 0; /* Add some padding for better left alignment */
+    border-bottom: 1px solid #ddd; /* Optional: border between items */
+  }
+
+  .MobileMenuIcon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .Logo {
+    margin-right: auto;
+  }
+  .Account {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}

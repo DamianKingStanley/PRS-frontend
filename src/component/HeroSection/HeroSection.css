@@ -1,0 +1,84 @@
+.heroSectionBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  height: 100vh;
+}
+
+.heroSectionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.heroTextContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.getStartedButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background-color: #0056b3;
+}
+
+.heroImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 980px) {
+  .heroSectionBody {
+    padding: 50px 10px;
+    height: 100%;
+  }
+  .heroSectionContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroTitle {
+    font-size: 30px;
+  }
+  .heroDescription {
+    font-size: 20px;
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+}

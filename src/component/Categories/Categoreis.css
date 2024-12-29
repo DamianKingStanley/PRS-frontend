@@ -1,0 +1,73 @@
+/* Main container styling */
+.CateoriesBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  padding: 50px 0px;
+}
+
+/* Heading */
+.CateoriesBody h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Category list container */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Category buttons */
+.category-btn {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Hover and active state */
+.category-btn:hover {
+  background-color: #187bcd;
+  transform: translateY(-2px);
+}
+
+.category-btn:active {
+  background-color: #145a8a;
+  transform: translateY(1px);
+}
+
+/* Responsive styling for tablets */
+@media screen and (max-width: 980px) {
+  /* Main container styling */
+
+  .CateoriesBody h2 {
+    font-size: 1.8rem;
+  }
+
+  .category-btn {
+    width: fit-content;
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}

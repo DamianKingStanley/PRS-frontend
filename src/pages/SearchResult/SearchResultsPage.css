@@ -1,0 +1,80 @@
+/* SearchResultsPage.css */
+.SearchResultsPage {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.SearchResultsPage h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.SearchResultsPage .loading,
+.SearchResultsPage .error {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.SearchResultsPage .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.SearchResultsPage .product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.SearchResultsPage .product-card:hover {
+  transform: translateY(-5px);
+}
+
+.SearchResultsPage .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.SearchResultsPage .product-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.SearchResultsPage .product-details h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.SearchResultsPage .product-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+@media screen and (max-width: 980px) {
+  .SearchResultsPage .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .SearchResultsPage .product-card {
+    padding: 10px;
+  }
+
+  .SearchResultsPage .product-image {
+    height: 150px;
+  }
+
+  .SearchResultsPage h2 {
+    font-size: 1.4rem;
+  }
+}

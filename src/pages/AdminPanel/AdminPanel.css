@@ -1,0 +1,173 @@
+.searchforbooks {
+    color: white;
+    text-align: center;
+}
+
+.displaySearchedBooks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+    color: white;
+}
+
+.book-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-details {
+    padding: 1rem 0;
+}
+
+.book-details h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.book-details p {
+    margin: 0.5rem 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#adminEditBtn {
+    background-color: #1d9d21;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adminEditBtn:hover {
+    background-color: #013b02;
+}
+
+#adminDeleteBtn {
+    background-color: #c53030;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adminDeleteBtn:hover {
+    background-color: #4c0202;
+}
+
+.update-modal-overlay,
+.delete-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.update-modal-content,
+.delete-modal-content {
+    backdrop-filter: blur(10px);
+    background: white;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    color: #015104;
+}
+
+.update-modal-content h2,
+.delete-modal-content h3 {
+    margin: 0 0 1rem;
+}
+
+.update-modal-content form div,
+.delete-modal-content .delete-modal-buttons {
+    margin-bottom: 1rem;
+}
+
+.update-modal-content label,
+.delete-modal-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.update-modal-content input {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adminConfirmUpdateBtn,
+#admiconfirmDeleteCancel {
+    background-color: #1d9d21;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+#adminConfirmUpdateBtn:hover,
+#admiconfirmDeleteCancel:hover {
+    background-color: #015104;
+}
+
+.update-close-button,
+#adminConfirmDeleteBtn {
+    background-color: #e53e3e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+.update-close-button:hover,
+#adminConfirmDeleteBtn:hover {
+    background-color: #350101;
+}
+
+.delete-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

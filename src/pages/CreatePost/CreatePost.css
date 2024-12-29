@@ -1,0 +1,135 @@
+/* CreatePost.css */
+.CreatePostBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.CreatePost {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 30px;
+  margin: 10px;
+}
+
+.CreatePost h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.CreatePost label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.CreatePost input[type="text"],
+.CreatePost input[type="number"],
+.CreatePost select,
+#description {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border 0.3s ease-in-out;
+}
+
+.CreatePost input[type="text"]:focus,
+.CreatePost input[type="number"]:focus,
+.CreatePost select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.CreatePost input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.CreatePost .cover-preview img {
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.CreatePost button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.CreatePost button:hover {
+  background-color: #0056b3;
+}
+
+.CreatePost .post_response {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.CreatePost .loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.CreatePost .loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.post_response-success {
+  color: green;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .CreatePostBody {
+    padding: 10px;
+  }
+  .CreatePost {
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .CreatePost h2 {
+    font-size: 1.5rem;
+  }
+
+  .CreatePost button {
+    padding: 10px;
+  }
+}

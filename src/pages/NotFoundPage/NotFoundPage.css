@@ -1,0 +1,35 @@
+.not-found-container {
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+
+.not-found-container h1 {
+  font-size: 100px;
+  margin: 0;
+  color: #ff6347; /* Tomato color */
+}
+
+.not-found-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.not-found-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home-link {
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.home-link:hover {
+  background-color: #0056b3;
+  color: white;
+}

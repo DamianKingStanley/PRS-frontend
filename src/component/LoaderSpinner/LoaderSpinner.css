@@ -1,0 +1,36 @@
+/* Container to center the spinner */
+.spinner-container {
+  display: flex;
+  flex-direction: column; /* Stack the spinner and text */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full height of the viewport */
+  font-family: Arial, sans-serif; /* Optional: Change font family */
+}
+
+/* Spinner styles */
+.spinner-container .spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3); /* Light border */
+  border-top: 8px solid #3498db; /* Blue top border */
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Spinner width */
+  height: 50px; /* Spinner height */
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading text styles */
+.spinner-container p {
+  margin-top: 10px; /* Space between spinner and text */
+  color: #3498db; /* Text color */
+  font-size: 16px; /* Text size */
+}

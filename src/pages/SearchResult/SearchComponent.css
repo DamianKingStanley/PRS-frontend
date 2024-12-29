@@ -1,0 +1,99 @@
+/* SearchComponent.css */
+.SearchComponent {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.SearchComponent h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.SearchComponent form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input2 {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input2:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.SearchComponent .search-button2 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.SearchComponent .search-button:hover {
+  background-color: #0056b3;
+}
+
+.SearchComponent .loading,
+.SearchComponent .error-message {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}
+
+.SearchComponent .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.SearchComponent .product-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.SearchComponent .product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.SearchComponent .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.SearchComponent .product-details {
+  padding: 10px;
+}
+
+.SearchComponent .product-details h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.SearchComponent .product-details p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
